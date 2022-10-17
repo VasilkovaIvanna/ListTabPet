@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		CA9097BC28FD49CD00169DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097BB28FD49CD00169DEF /* AppDelegate.swift */; };
 		CA9097BE28FD49CD00169DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097BD28FD49CD00169DEF /* SceneDelegate.swift */; };
-		CA9097C028FD49CD00169DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097BF28FD49CD00169DEF /* ViewController.swift */; };
 		CA9097C328FD49CD00169DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9097C128FD49CD00169DEF /* Main.storyboard */; };
 		CA9097C528FD49CD00169DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9097C428FD49CD00169DEF /* Assets.xcassets */; };
 		CA9097C828FD49CD00169DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9097C628FD49CD00169DEF /* LaunchScreen.storyboard */; };
-		CA9097D328FD49CD00169DEF /* ListTabPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097D228FD49CD00169DEF /* ListTabPetTests.swift */; };
-		CA9097DD28FD49CD00169DEF /* ListTabPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097DC28FD49CD00169DEF /* ListTabPetUITests.swift */; };
-		CA9097DF28FD49CD00169DEF /* ListTabPetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097DE28FD49CD00169DEF /* ListTabPetUITestsLaunchTests.swift */; };
+		CA9097ED28FD4A0900169DEF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097EC28FD4A0900169DEF /* ListViewModel.swift */; };
+		CA9097F028FD4A3400169DEF /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097EF28FD4A3400169DEF /* ListCollectionViewCell.swift */; };
+		CA9097F228FD4A6500169DEF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097F128FD4A6500169DEF /* ListViewController.swift */; };
+		CA9097F528FD4AA100169DEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097F428FD4AA100169DEF /* ContentView.swift */; };
+		CA90980F28FD4C4700169DEF /* DecisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90980E28FD4C4700169DEF /* DecisionModel.swift */; };
+		CA90981128FD4CD100169DEF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90981028FD4CD100169DEF /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +28,7 @@
 			remoteGlobalIDString = CA9097B728FD49CD00169DEF;
 			remoteInfo = ListTabPet;
 		};
-		CA9097D928FD49CD00169DEF /* PBXContainerItemProxy */ = {
+		CA90980528FD4BB400169DEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA9097B028FD49CC00169DEF /* Project object */;
 			proxyType = 1;
@@ -39,16 +41,18 @@
 		CA9097B828FD49CD00169DEF /* ListTabPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListTabPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9097BB28FD49CD00169DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9097BD28FD49CD00169DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA9097BF28FD49CD00169DEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA9097C228FD49CD00169DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA9097C428FD49CD00169DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9097C728FD49CD00169DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9097C928FD49CD00169DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9097CE28FD49CD00169DEF /* ListTabPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListTabPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA9097D228FD49CD00169DEF /* ListTabPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabPetTests.swift; sourceTree = "<group>"; };
-		CA9097D828FD49CD00169DEF /* ListTabPetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListTabPetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA9097DC28FD49CD00169DEF /* ListTabPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabPetUITests.swift; sourceTree = "<group>"; };
-		CA9097DE28FD49CD00169DEF /* ListTabPetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabPetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA9097EC28FD4A0900169DEF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		CA9097EF28FD4A3400169DEF /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA9097F128FD4A6500169DEF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CA9097F428FD4AA100169DEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA9097FF28FD4BB400169DEF /* ListTabPetUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListTabPetUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA90980E28FD4C4700169DEF /* DecisionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionModel.swift; sourceTree = "<group>"; };
+		CA90981028FD4CD100169DEF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA9097D528FD49CD00169DEF /* Frameworks */ = {
+		CA9097FC28FD4BB400169DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				CA9097BA28FD49CD00169DEF /* ListTabPet */,
-				CA9097D128FD49CD00169DEF /* ListTabPetTests */,
-				CA9097DB28FD49CD00169DEF /* ListTabPetUITests */,
 				CA9097B928FD49CD00169DEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +93,7 @@
 			children = (
 				CA9097B828FD49CD00169DEF /* ListTabPet.app */,
 				CA9097CE28FD49CD00169DEF /* ListTabPetTests.xctest */,
-				CA9097D828FD49CD00169DEF /* ListTabPetUITests.xctest */,
+				CA9097FF28FD4BB400169DEF /* ListTabPetUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,32 +101,44 @@
 		CA9097BA28FD49CD00169DEF /* ListTabPet */ = {
 			isa = PBXGroup;
 			children = (
+				CA9097EB28FD49FA00169DEF /* List */,
+				CA9097EE28FD4A2200169DEF /* UIkit */,
+				CA9097F328FD4A8800169DEF /* SwiftUI */,
 				CA9097BB28FD49CD00169DEF /* AppDelegate.swift */,
 				CA9097BD28FD49CD00169DEF /* SceneDelegate.swift */,
-				CA9097BF28FD49CD00169DEF /* ViewController.swift */,
-				CA9097C128FD49CD00169DEF /* Main.storyboard */,
+				CA90981028FD4CD100169DEF /* Extensions.swift */,
 				CA9097C428FD49CD00169DEF /* Assets.xcassets */,
-				CA9097C628FD49CD00169DEF /* LaunchScreen.storyboard */,
 				CA9097C928FD49CD00169DEF /* Info.plist */,
 			);
 			path = ListTabPet;
 			sourceTree = "<group>";
 		};
-		CA9097D128FD49CD00169DEF /* ListTabPetTests */ = {
+		CA9097EB28FD49FA00169DEF /* List */ = {
 			isa = PBXGroup;
 			children = (
-				CA9097D228FD49CD00169DEF /* ListTabPetTests.swift */,
+				CA9097EC28FD4A0900169DEF /* ListViewModel.swift */,
+				CA90980E28FD4C4700169DEF /* DecisionModel.swift */,
 			);
-			path = ListTabPetTests;
+			path = List;
 			sourceTree = "<group>";
 		};
-		CA9097DB28FD49CD00169DEF /* ListTabPetUITests */ = {
+		CA9097EE28FD4A2200169DEF /* UIkit */ = {
 			isa = PBXGroup;
 			children = (
-				CA9097DC28FD49CD00169DEF /* ListTabPetUITests.swift */,
-				CA9097DE28FD49CD00169DEF /* ListTabPetUITestsLaunchTests.swift */,
+				CA9097EF28FD4A3400169DEF /* ListCollectionViewCell.swift */,
+				CA9097F128FD4A6500169DEF /* ListViewController.swift */,
+				CA9097C128FD49CD00169DEF /* Main.storyboard */,
+				CA9097C628FD49CD00169DEF /* LaunchScreen.storyboard */,
 			);
-			path = ListTabPetUITests;
+			path = UIkit;
+			sourceTree = "<group>";
+		};
+		CA9097F328FD4A8800169DEF /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				CA9097F428FD4AA100169DEF /* ContentView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,22 +179,22 @@
 			productReference = CA9097CE28FD49CD00169DEF /* ListTabPetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CA9097D728FD49CD00169DEF /* ListTabPetUITests */ = {
+		CA9097FE28FD4BB400169DEF /* ListTabPetUnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA9097E828FD49CD00169DEF /* Build configuration list for PBXNativeTarget "ListTabPetUITests" */;
+			buildConfigurationList = CA90980728FD4BB400169DEF /* Build configuration list for PBXNativeTarget "ListTabPetUnitTests" */;
 			buildPhases = (
-				CA9097D428FD49CD00169DEF /* Sources */,
-				CA9097D528FD49CD00169DEF /* Frameworks */,
-				CA9097D628FD49CD00169DEF /* Resources */,
+				CA9097FB28FD4BB400169DEF /* Sources */,
+				CA9097FC28FD4BB400169DEF /* Frameworks */,
+				CA9097FD28FD4BB400169DEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA9097DA28FD49CD00169DEF /* PBXTargetDependency */,
+				CA90980628FD4BB400169DEF /* PBXTargetDependency */,
 			);
-			name = ListTabPetUITests;
-			productName = ListTabPetUITests;
-			productReference = CA9097D828FD49CD00169DEF /* ListTabPetUITests.xctest */;
+			name = ListTabPetUnitTests;
+			productName = ListTabPetUnitTests;
+			productReference = CA9097FF28FD4BB400169DEF /* ListTabPetUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +214,7 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = CA9097B728FD49CD00169DEF;
 					};
-					CA9097D728FD49CD00169DEF = {
+					CA9097FE28FD4BB400169DEF = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = CA9097B728FD49CD00169DEF;
 					};
@@ -221,7 +235,7 @@
 			targets = (
 				CA9097B728FD49CD00169DEF /* ListTabPet */,
 				CA9097CD28FD49CD00169DEF /* ListTabPetTests */,
-				CA9097D728FD49CD00169DEF /* ListTabPetUITests */,
+				CA9097FE28FD4BB400169DEF /* ListTabPetUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,7 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA9097D628FD49CD00169DEF /* Resources */ = {
+		CA9097FD28FD4BB400169DEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9097C028FD49CD00169DEF /* ViewController.swift in Sources */,
+				CA9097F028FD4A3400169DEF /* ListCollectionViewCell.swift in Sources */,
+				CA9097F528FD4AA100169DEF /* ContentView.swift in Sources */,
+				CA9097F228FD4A6500169DEF /* ListViewController.swift in Sources */,
+				CA90981128FD4CD100169DEF /* Extensions.swift in Sources */,
 				CA9097BC28FD49CD00169DEF /* AppDelegate.swift in Sources */,
+				CA90980F28FD4C4700169DEF /* DecisionModel.swift in Sources */,
+				CA9097ED28FD4A0900169DEF /* ListViewModel.swift in Sources */,
 				CA9097BE28FD49CD00169DEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,16 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9097D328FD49CD00169DEF /* ListTabPetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA9097D428FD49CD00169DEF /* Sources */ = {
+		CA9097FB28FD4BB400169DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9097DF28FD49CD00169DEF /* ListTabPetUITestsLaunchTests.swift in Sources */,
-				CA9097DD28FD49CD00169DEF /* ListTabPetUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +305,10 @@
 			target = CA9097B728FD49CD00169DEF /* ListTabPet */;
 			targetProxy = CA9097CF28FD49CD00169DEF /* PBXContainerItemProxy */;
 		};
-		CA9097DA28FD49CD00169DEF /* PBXTargetDependency */ = {
+		CA90980628FD4BB400169DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CA9097B728FD49CD00169DEF /* ListTabPet */;
-			targetProxy = CA9097D928FD49CD00169DEF /* PBXContainerItemProxy */;
+			targetProxy = CA90980528FD4BB400169DEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -538,10 +554,9 @@
 			};
 			name = Release;
 		};
-		CA9097E928FD49CD00169DEF /* Debug */ = {
+		CA90980828FD4BB400169DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QF5DP4K689;
@@ -552,7 +567,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ivannavasilkova.ListTabPetUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ivannavasilkova.ListTabPetUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -561,10 +576,9 @@
 			};
 			name = Debug;
 		};
-		CA9097EA28FD49CD00169DEF /* Release */ = {
+		CA90980928FD4BB400169DEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QF5DP4K689;
@@ -575,7 +589,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ivannavasilkova.ListTabPetUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ivannavasilkova.ListTabPetUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -614,11 +628,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA9097E828FD49CD00169DEF /* Build configuration list for PBXNativeTarget "ListTabPetUITests" */ = {
+		CA90980728FD4BB400169DEF /* Build configuration list for PBXNativeTarget "ListTabPetUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA9097E928FD49CD00169DEF /* Debug */,
-				CA9097EA28FD49CD00169DEF /* Release */,
+				CA90980828FD4BB400169DEF /* Debug */,
+				CA90980928FD4BB400169DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
