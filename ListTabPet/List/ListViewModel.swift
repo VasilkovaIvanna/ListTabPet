@@ -1,20 +1,10 @@
 import Foundation
 
-enum ElementColor: CaseIterable {
-    case blue
-    case orange
-}
-
-struct ElementModel {
-    var color : ElementColor
-    var number : Int
-}
-
 protocol ListViewProtocol : AnyObject {
     func update()
 }
 
-class ListViewModel : ObservableObject {
+class ListViewModel : ObservableObject {  // MARK: Old implementation
     
     private struct ListModel {
         var elementsList : [ElementModel] = []

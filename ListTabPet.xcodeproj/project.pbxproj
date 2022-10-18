@@ -25,6 +25,8 @@
 		CA90983828FDAC7300169DEF /* ListViewModelCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983728FDAC7300169DEF /* ListViewModelCombine.swift */; };
 		CA90983A28FEC58500169DEF /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983928FEC58500169DEF /* UsersListViewController.swift */; };
 		CA90983F28FEC6C900169DEF /* UserViewModelCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */; };
+		CA90984328FEED8400169DEF /* ElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90984228FEED8300169DEF /* ElementModel.swift */; };
+		CA90984528FEEE4400169DEF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90984428FEEE4400169DEF /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		CA90983728FDAC7300169DEF /* ListViewModelCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelCombine.swift; sourceTree = "<group>"; };
 		CA90983928FEC58500169DEF /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelCombine.swift; sourceTree = "<group>"; };
+		CA90984228FEED8300169DEF /* ElementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementModel.swift; sourceTree = "<group>"; };
+		CA90984428FEEE4400169DEF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				CA90983428FDA96300169DEF /* Combine */,
+				CA90984228FEED8300169DEF /* ElementModel.swift */,
+				CA90984428FEEE4400169DEF /* UserModel.swift */,
 				CA9097EC28FD4A0900169DEF /* ListViewModel.swift */,
 				CA90980E28FD4C4700169DEF /* DecisionModel.swift */,
 			);
@@ -283,9 +289,11 @@
 				CA90981128FD4CD100169DEF /* Extensions.swift in Sources */,
 				CA9097BC28FD49CD00169DEF /* AppDelegate.swift in Sources */,
 				CA90983828FDAC7300169DEF /* ListViewModelCombine.swift in Sources */,
+				CA90984528FEEE4400169DEF /* UserModel.swift in Sources */,
 				CA90980F28FD4C4700169DEF /* DecisionModel.swift in Sources */,
 				CA90983A28FEC58500169DEF /* UsersListViewController.swift in Sources */,
 				CA9097ED28FD4A0900169DEF /* ListViewModel.swift in Sources */,
+				CA90984328FEED8400169DEF /* ElementModel.swift in Sources */,
 				CA9097BE28FD49CD00169DEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

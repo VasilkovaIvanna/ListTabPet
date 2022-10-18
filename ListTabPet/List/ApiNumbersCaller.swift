@@ -2,14 +2,6 @@ import Foundation
 import Combine
 import SwiftUI
 
-struct User: Codable {
-    let name: String
-}
-
-protocol UserViewProtocol : AnyObject {
-    func update()
-}
-
 class ApiNumbersCaller {
     static let shared = ApiNumbersCaller()
     private let url = URL(string: "https://jsonplaceholder.typicode.com/users")
@@ -42,6 +34,4 @@ class ApiNumbersCaller {
         
         return publisher
     }
-    
-    
 }

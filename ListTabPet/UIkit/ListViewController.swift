@@ -13,7 +13,8 @@ class ListViewController: UIViewController, ListViewProtocol {
     
     private var highlightedCell: Int? = nil
     
-//  var viewModel = ListViewModel(decisionProvider: RandomDecisionProvider())
+    // MARK: Old timer implementation
+    // var viewModel = ListViewModel(decisionProvider: RandomDecisionProvider())
     var viewModel = ListViewModelCombine()
         
     override func viewDidLoad() {

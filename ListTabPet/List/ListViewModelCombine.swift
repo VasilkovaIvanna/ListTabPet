@@ -8,7 +8,7 @@ class ListViewModelCombine : ObservableObject {
         var isActiveTimer = false
         
     }
-        
+    
     @Published private var model = ListModel() {
         didSet {
             delegate?.update()
@@ -21,7 +21,7 @@ class ListViewModelCombine : ObservableObject {
     
     weak var delegate : ListViewProtocol?
     
-    private var timer = Timer()
+    private var timer : Cancellable?
     
     private var index = 0
     
@@ -30,7 +30,7 @@ class ListViewModelCombine : ObservableObject {
     var recievedNumbers = [Int]()
     
     init() {
-        observer = ApiNumbersCaller.shared.fetchNumbers()
+        observer = ApiNumbersCaller.shared.fetchNumbers() // get numbers from API
             .sink(
                 receiveCompletion: { completion in
                     switch completion {
@@ -63,10 +63,21 @@ class ListViewModelCombine : ObservableObject {
     
     func manageTimer() {
         if model.isActiveTimer {
-            timer.invalidate()
+            // MARK: Old timer implementation
+            //            timer.upstream.connect().cancel()
+            //            timer.invalidate()
             model.isActiveTimer = false
+            timer?.cancel()
         } else {
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerCounting), userInfo: nil, repeats: true)
+            timer = Timer.publish(every: 1, on: .main, in: .default)
+                .autoconnect()
+                .receive(on: DispatchQueue.main)
+                .sink(receiveValue: { [weak self] _ in
+                    self?.onTimerCounting()
+                }) as Cancellable
+            
+            // MARK: Old timer implementation
+            //  timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerCounting), userInfo: nil, repeats: true)
             model.isActiveTimer = true
         }
     }
