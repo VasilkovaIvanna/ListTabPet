@@ -13,8 +13,9 @@ class ListViewController: UIViewController, ListViewProtocol {
     
     private var highlightedCell: Int? = nil
     
-    var viewModel = ListViewModel(decisionProvider: RandomDecisionProvider())
-    
+//  var viewModel = ListViewModel(decisionProvider: RandomDecisionProvider())
+    var viewModel = ListViewModelCombine()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
@@ -81,7 +82,7 @@ extension ListViewController: UICollectionViewDataSource {
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         highlightedCell = indexPath.row
-        viewModel.addValueOfAnElementBefore(index: indexPath.row)
+        viewModel.onTimerCounting()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             if self?.highlightedCell == indexPath.row {
                 self?.highlightedCell = nil
@@ -96,3 +97,7 @@ extension ListViewController: UICollectionViewDelegateFlowLayout {
         return .init(width: self.collectionView.frame.width, height: 96)
     }
 }
+
+
+
+

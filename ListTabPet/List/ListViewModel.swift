@@ -5,7 +5,7 @@ enum ElementColor: CaseIterable {
     case orange
 }
 
-private struct ElementModel {
+struct ElementModel {
     var color : ElementColor
     var number : Int
 }

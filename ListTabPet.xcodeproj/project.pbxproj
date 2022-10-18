@@ -21,6 +21,10 @@
 		CA90983028FD520F00169DEF /* ListTabPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90981828FD514400169DEF /* ListTabPetTests.swift */; };
 		CA90983128FD52D100169DEF /* DecisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90980E28FD4C4700169DEF /* DecisionModel.swift */; };
 		CA90983228FD52D900169DEF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9097EC28FD4A0900169DEF /* ListViewModel.swift */; };
+		CA90983628FDA9DF00169DEF /* ApiNumbersCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983528FDA9DF00169DEF /* ApiNumbersCaller.swift */; };
+		CA90983828FDAC7300169DEF /* ListViewModelCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983728FDAC7300169DEF /* ListViewModelCombine.swift */; };
+		CA90983A28FEC58500169DEF /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983928FEC58500169DEF /* UsersListViewController.swift */; };
+		CA90983F28FEC6C900169DEF /* UserViewModelCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		CA90981028FD4CD100169DEF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CA90981828FD514400169DEF /* ListTabPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabPetTests.swift; sourceTree = "<group>"; };
 		CA90982528FD520C00169DEF /* ListTabPetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListTabPetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA90983528FDA9DF00169DEF /* ApiNumbersCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNumbersCaller.swift; sourceTree = "<group>"; };
+		CA90983728FDAC7300169DEF /* ListViewModelCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelCombine.swift; sourceTree = "<group>"; };
+		CA90983928FEC58500169DEF /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelCombine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 		CA9097EB28FD49FA00169DEF /* List */ = {
 			isa = PBXGroup;
 			children = (
+				CA90983428FDA96300169DEF /* Combine */,
 				CA9097EC28FD4A0900169DEF /* ListViewModel.swift */,
 				CA90980E28FD4C4700169DEF /* DecisionModel.swift */,
 			);
@@ -114,8 +123,8 @@
 		CA9097EE28FD4A2200169DEF /* UIkit */ = {
 			isa = PBXGroup;
 			children = (
-				CA9097EF28FD4A3400169DEF /* ListCollectionViewCell.swift */,
-				CA9097F128FD4A6500169DEF /* ListViewController.swift */,
+				CA90984028FEDEF600169DEF /* List */,
+				CA90984128FEDEFD00169DEF /* User */,
 				CA9097C128FD49CD00169DEF /* Main.storyboard */,
 				CA9097C628FD49CD00169DEF /* LaunchScreen.storyboard */,
 			);
@@ -136,6 +145,33 @@
 				CA90981828FD514400169DEF /* ListTabPetTests.swift */,
 			);
 			path = ListTabPetUITests;
+			sourceTree = "<group>";
+		};
+		CA90983428FDA96300169DEF /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				CA90983528FDA9DF00169DEF /* ApiNumbersCaller.swift */,
+				CA90983728FDAC7300169DEF /* ListViewModelCombine.swift */,
+				CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */,
+			);
+			name = Combine;
+			sourceTree = "<group>";
+		};
+		CA90984028FEDEF600169DEF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CA9097F128FD4A6500169DEF /* ListViewController.swift */,
+				CA9097EF28FD4A3400169DEF /* ListCollectionViewCell.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		CA90984128FEDEFD00169DEF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CA90983928FEC58500169DEF /* UsersListViewController.swift */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,11 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9097F028FD4A3400169DEF /* ListCollectionViewCell.swift in Sources */,
+				CA90983F28FEC6C900169DEF /* UserViewModelCombine.swift in Sources */,
 				CA9097F528FD4AA100169DEF /* ContentView.swift in Sources */,
 				CA9097F228FD4A6500169DEF /* ListViewController.swift in Sources */,
+				CA90983628FDA9DF00169DEF /* ApiNumbersCaller.swift in Sources */,
 				CA90981128FD4CD100169DEF /* Extensions.swift in Sources */,
 				CA9097BC28FD49CD00169DEF /* AppDelegate.swift in Sources */,
+				CA90983828FDAC7300169DEF /* ListViewModelCombine.swift in Sources */,
 				CA90980F28FD4C4700169DEF /* DecisionModel.swift in Sources */,
+				CA90983A28FEC58500169DEF /* UsersListViewController.swift in Sources */,
 				CA9097ED28FD4A0900169DEF /* ListViewModel.swift in Sources */,
 				CA9097BE28FD49CD00169DEF /* SceneDelegate.swift in Sources */,
 			);
