@@ -27,6 +27,7 @@
 		CA90983F28FEC6C900169DEF /* UserViewModelCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */; };
 		CA90984328FEED8400169DEF /* ElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90984228FEED8300169DEF /* ElementModel.swift */; };
 		CA90984528FEEE4400169DEF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90984428FEEE4400169DEF /* UserModel.swift */; };
+		CA90984628FEF08100169DEF /* ElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90984228FEED8300169DEF /* ElementModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -302,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA90984628FEF08100169DEF /* ElementModel.swift in Sources */,
 				CA90983228FD52D900169DEF /* ListViewModel.swift in Sources */,
 				CA90983128FD52D100169DEF /* DecisionModel.swift in Sources */,
 				CA90983028FD520F00169DEF /* ListTabPetTests.swift in Sources */,
