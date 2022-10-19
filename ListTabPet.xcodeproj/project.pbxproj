@@ -82,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA08562729002BC500E1F5C3 /* Combile */ = {
+			isa = PBXGroup;
+			children = (
+				CA90983528FDA9DF00169DEF /* ApiNumbersCaller.swift */,
+				CA90983728FDAC7300169DEF /* ListViewModelCombine.swift */,
+				CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */,
+			);
+			path = Combile;
+			sourceTree = "<group>";
+		};
+		CA08562829002BDC00E1F5C3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CA9097F128FD4A6500169DEF /* ListViewController.swift */,
+				CA9097EF28FD4A3400169DEF /* ListCollectionViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		CA08562A29002BF600E1F5C3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CA90983928FEC58500169DEF /* UsersListViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		CA9097AF28FD49CC00169DEF = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +145,7 @@
 		CA9097EB28FD49FA00169DEF /* List */ = {
 			isa = PBXGroup;
 			children = (
-				CA90983428FDA96300169DEF /* Combine */,
+				CA08562729002BC500E1F5C3 /* Combile */,
 				CA90984228FEED8300169DEF /* ElementModel.swift */,
 				CA90984428FEEE4400169DEF /* UserModel.swift */,
 				CA9097EC28FD4A0900169DEF /* ListViewModel.swift */,
@@ -130,8 +157,8 @@
 		CA9097EE28FD4A2200169DEF /* UIkit */ = {
 			isa = PBXGroup;
 			children = (
-				CA90984028FEDEF600169DEF /* List */,
-				CA90984128FEDEFD00169DEF /* User */,
+				CA08562A29002BF600E1F5C3 /* User */,
+				CA08562829002BDC00E1F5C3 /* List */,
 				CA9097C128FD49CD00169DEF /* Main.storyboard */,
 				CA9097C628FD49CD00169DEF /* LaunchScreen.storyboard */,
 			);
@@ -152,33 +179,6 @@
 				CA90981828FD514400169DEF /* ListTabPetTests.swift */,
 			);
 			path = ListTabPetUITests;
-			sourceTree = "<group>";
-		};
-		CA90983428FDA96300169DEF /* Combine */ = {
-			isa = PBXGroup;
-			children = (
-				CA90983528FDA9DF00169DEF /* ApiNumbersCaller.swift */,
-				CA90983728FDAC7300169DEF /* ListViewModelCombine.swift */,
-				CA90983E28FEC6C800169DEF /* UserViewModelCombine.swift */,
-			);
-			name = Combine;
-			sourceTree = "<group>";
-		};
-		CA90984028FEDEF600169DEF /* List */ = {
-			isa = PBXGroup;
-			children = (
-				CA9097F128FD4A6500169DEF /* ListViewController.swift */,
-				CA9097EF28FD4A3400169DEF /* ListCollectionViewCell.swift */,
-			);
-			name = List;
-			sourceTree = "<group>";
-		};
-		CA90984128FEDEFD00169DEF /* User */ = {
-			isa = PBXGroup;
-			children = (
-				CA90983928FEC58500169DEF /* UsersListViewController.swift */,
-			);
-			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
